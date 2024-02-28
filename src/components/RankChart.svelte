@@ -115,6 +115,13 @@
         window.location.href=`/ekiden/runners/${githubUser}`;
       }
     },
+    onHover: function(_, items) {
+      if(items.length > 0) {
+        document.body.style.cursor = 'pointer';
+      } else {
+        document.body.style.cursor = 'default';
+      }
+    },
     scales: {
       x: {
         ticks: {
