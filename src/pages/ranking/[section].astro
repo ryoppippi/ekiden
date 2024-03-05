@@ -1,5 +1,4 @@
 ---
-import dayjs from "dayjs";
 import SeasonList, {
   dateToSection,
   displaySectionName,
@@ -28,7 +27,7 @@ type Props = {
 const { section } = Astro.props;
 
 const articles = getArticles({ isPublished: true }).filter((article) => {
-  const articleSection = dateToSection(dayjs(article.date));
+  const articleSection = dateToSection(article.date);
   return (
     articleSection.fiscalYear == section.fiscalYear &&
     articleSection.season == section.season

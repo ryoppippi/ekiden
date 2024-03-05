@@ -58,9 +58,12 @@ const newestArticle = getArticles({ isPublished: true }).at(-1);
     {
       newestArticle && (
         <p>
-          <b>News</b>:{dayjs(newestArticle.date).format("M/D")}
+          <b>News</b>:{newestArticle.date.format("M/D")}
           の記事 「
-          <a class="text-blue-500" href={`#article-${newestArticle.date}`}>
+          <a
+            class="text-blue-500"
+            href={`#article-${newestArticle.dateString}`}
+          >
             {newestArticle.title}
           </a>
           」 が公開されました！

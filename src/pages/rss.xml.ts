@@ -1,5 +1,4 @@
 import rss from "@astrojs/rss";
-import dayjs from "dayjs";
 import { getArticles } from "@/lib/article";
 
 export async function GET(context: { site: string }) {
@@ -13,7 +12,7 @@ export async function GET(context: { site: string }) {
     items: articles.map((article) => ({
       title: article.title,
       description: `By ${article.runner}`,
-      pubDate: dayjs(article.date).toDate(),
+      pubDate: article.date.toDate(),
       // article.url が null なものは除いているため本当はいらないのだが、
       // 型チェックを通すために仕方なく
       link: article.url ?? "",

@@ -1,9 +1,9 @@
 ---
-import dayjs from "dayjs";
+import dayjs, { type Dayjs } from "dayjs";
 
 export type ArticleProps = {
   title: string;
-  date: string;
+  date: Dayjs;
   runner: string;
   url: string | null;
   firstDay?: boolean;
@@ -14,7 +14,7 @@ export type ArticleProps = {
 
 type Props = ArticleProps;
 
-const { title, date, runner, url, firstDay, opened } = Astro.props;
+const { title, dateString, runner, url, firstDay, opened } = Astro.props;
 
 const published = dayjs() >= dayjs(date);
 ---
