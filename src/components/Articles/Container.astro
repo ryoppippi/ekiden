@@ -1,0 +1,37 @@
+---
+type Props = {
+  date: string;
+};
+
+const { date }: Props = Astro.props;
+---
+
+<div class="container" id={`article-${date}`}>
+  <slot />
+</div>
+
+<style>
+  .container {
+    --date-r: 20px;
+    --date-my: 40px;
+    --date-mx: 40px;
+    --date-fs: 1rem;
+    --timeline-w: 10px;
+    --timeline-m: calc(var(--date-r) - var(--timeline-w) / 2);
+    --runner-h: 30px;
+    --triangle-h: calc(var(--date-my) + var(--date-r) - var(--runner-h));
+    --triangle-w: calc(var(--date-mx) + var(--date-r));
+    --triangle-a: calc(0deg - atan2(var(--triangle-h), var(--triangle-w)));
+    --triangle-l: calc(var(--triangle-w) / cos(var(--triangle-a)));
+    @apply relative overflow-hidden;
+  }
+
+  .container::before {
+    content: " ";
+    background: var(--light-gray);
+    width: var(--timeline-w);
+    z-index: -1;
+    left: calc(var(--date-r) + var(--date-mx) - var(--timeline-w) / 2);
+    @apply absolute min-h-screen;
+  }
+</style>
