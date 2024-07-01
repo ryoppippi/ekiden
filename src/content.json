@@ -1540,9 +1540,201 @@
       "title": "H/LとPageUp/PageDownを共存させる設定",
       "date": "2024-05-22",
       "runner": "kuuote",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/20240522_ekiden_better_hl",
       "githubUser": "kuuote",
       "issueNumber": 420
+    },
+    {
+      "title": "50行くらいでvim-qfedit的なquickfix編集機能を作る",
+      "date": "2024-05-24",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/669aa445a3f20b",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 426
+    },
+    {
+      "title": "nvim-treesitter は Python のインデントを壊す (共存方法まで紹介)",
+      "date": "2024-05-27",
+      "runner": "uga-rosa",
+      "url": "https://zenn.dev/uga_rosa/articles/9eb5063f8f9b75",
+      "githubUser": "uga-rosa",
+      "issueNumber": 427
+    },
+    {
+      "title": "H/LとPageUp/PageDownを共存させる設定 (submode編)",
+      "date": "2024-05-29",
+      "runner": "atusy",
+      "url": "https://blog.atusy.net/2024/05/29/vim-hl-enhanced/",
+      "githubUser": "atusy",
+      "issueNumber": 431
+    },
+    {
+      "title": "GitHub ActionsでVimの起動速度の履歴を管理する",
+      "date": "2024-05-31",
+      "runner": "ぺりー",
+      "url": "https://satorunooshie.medium.com/github-actions-vim-startuptime-7102c550f767",
+      "githubUser": "satorunooshie",
+      "issueNumber": 432
+    },
+    {
+      "title": "Meguro.vim #23 を開催しました",
+      "date": "2024-06-03",
+      "runner": "thinca",
+      "url": "https://thinca.hatenablog.com/entry/2024/06/megurovim-23",
+      "githubUser": "thinca",
+      "issueNumber": 435
+    },
+    {
+      "title": "中級 Vim 操作",
+      "date": "2024-06-05",
+      "runner": "monaqa",
+      "url": "https://zenn.dev/vim_jp/articles/2024-06-05-vim-middle-class-features",
+      "githubUser": "monaqa",
+      "issueNumber": 436
+    },
+    {
+      "title": "psdのdiffをvimから見やすくしてみた",
+      "date": "2024-06-07",
+      "runner": "kamecha",
+      "url": "https://zenn.dev/kamecha/articles/c9e6e371e6b895",
+      "githubUser": "kamecha",
+      "issueNumber": 438
+    },
+    {
+      "title": "CopilotChatとNeovimでGitの効率を上げる",
+      "date": "2024-06-10",
+      "runner": "ryoppippi",
+      "url": "https://zenn.dev/vim_jp/articles/041300c0f9cc50",
+      "githubUser": "ryoppippi",
+      "issueNumber": 443
+    },
+    {
+      "title": "j/kを加速させるサブモード",
+      "date": "2024-06-12",
+      "runner": "Atusy",
+      "url": "https://blog.atusy.net/2024/06/12/vim-submode-jjjj/",
+      "githubUser": "atusy",
+      "issueNumber": 448
+    },
+    {
+      "title": "最近のvimいじり",
+      "date": "2024-06-14",
+      "runner": "kyoh86",
+      "url": "https://zenn.dev/vim_jp/articles/31e88eec330508",
+      "githubUser": "kyoh86",
+      "issueNumber": 449
+    },
+    {
+      "title": "dduでお気に入りリストを実現させるためにddu-filterを作った",
+      "date": "2024-06-17",
+      "runner": "staticWagomU",
+      "url": "https://wagomu.me/blog/2024-06-17-vim-ekiden/",
+      "githubUser": "staticWagomU",
+      "issueNumber": 446
+    },
+    {
+      "title": "Vimの辞書補完を文字数でソートする",
+      "date": "2024-06-19",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/09ab965ebb0f6e",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 450
+    },
+    {
+      "title": "SKKの接頭辞・接尾辞変換をvim-skk/skkeletonに追加した",
+      "date": "2024-06-21",
+      "runner": "atusy",
+      "url": "https://blog.atusy.net/2024/06/21/skkeleton-affix/",
+      "githubUser": "atusy",
+      "issueNumber": 451
+    },
+    {
+      "title": "自分でVimを設定すると何が嬉しいのか",
+      "date": "2024-06-24",
+      "runner": "yasunori0418",
+      "url": "https://zenn.dev/vim_jp/articles/0010-what_is_thank_you_for_allowing_setting",
+      "githubUser": "yasunori0418",
+      "issueNumber": 452
+    },
+    {
+      "title": "vim-jpのSlackに参加した後はどうしたらいいの？",
+      "date": "2024-06-26",
+      "runner": "staticWagomU",
+      "url": "https://wagomu.me/blog/2024-06-26-vim-ekiden/",
+      "githubUser": "staticWagomU",
+      "issueNumber": 453
+    },
+    {
+      "title": "TSでdduのカスタムアクションの作り方とPRまで",
+      "date": "2024-06-28",
+      "runner": "yasunori0418",
+      "url": "https://zenn.dev/vim_jp/articles/0011-how_to_make_ddu_custom_action",
+      "githubUser": "yasunori0418",
+      "issueNumber": 454
+    },
+    {
+      "title": "NeovimでReactのエラー箇所を開くように設定する",
+      "date": "2024-07-01",
+      "runner": "kyoh86",
+      "url": "https://zenn.dev/vim_jp/articles/5a245a6c278929",
+      "githubUser": "kyoh86",
+      "issueNumber": 456
+    },
+    {
+      "title": "Conventional Commitsのprefixが覚えられないので、cmpのソースを作ったはなし",
+      "date": "2024-07-03",
+      "runner": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 457
+    },
+    {
+      "title": "nannka kaku",
+      "date": "2024-07-05",
+      "runner": "ryoppippi",
+      "url": null,
+      "githubUser": "ryoppippi",
+      "issueNumber": 458
+    },
+    {
+      "title": "Vimの正規表現は強い",
+      "date": "2024-07-08",
+      "runner": "uga-rosa",
+      "url": null,
+      "githubUser": "uga-rosa",
+      "issueNumber": 459
+    },
+    {
+      "title": "Vimでvim-jpラジオを聞く",
+      "date": "2024-07-10",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/8cdd74125fa39e",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 473
+    },
+    {
+      "title": "マイナーなプラグイン構成を試してみる",
+      "date": "2024-07-12",
+      "runner": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 455
+    },
+    {
+      "title": "VHS で楽に Neovim のデモ動画を録る",
+      "date": "2024-07-15",
+      "runner": "monaqa",
+      "url": null,
+      "githubUser": "monaqa",
+      "issueNumber": 474
+    },
+    {
+      "title": "Meguro.vim #24 を開催しました",
+      "date": "2024-07-29",
+      "runner": "thinca",
+      "url": "https://thinca.hatenablog.com/entry/2024/07/megurovim-24",
+      "githubUser": "thinca",
+      "issueNumber": 447
     }
   ]
 }
