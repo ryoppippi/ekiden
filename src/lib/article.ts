@@ -1,4 +1,6 @@
 import dayjs from "dayjs";
+import { pipe } from "@core/pipe";
+import { filter, map } from "@core/iterutil/pipe";
 import contents from "@/content.json";
 
 export type Content = (typeof contents)["articles"][number];
@@ -19,12 +21,17 @@ export type ReturnArticlesFilterOptions = {
  */
 export function getArticles(options: ReturnArticlesFilterOptions = {}) {
   const today = dayjs();
-  return (
-    contents.articles
-      /** 記事の日付を昇順に並び替え */
-      .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
+
+  /** 記事の日付を昇順に並び替え */
+  const sortedArticles = contents.articles.sort(
+    (a, b) => dayjs(a.date).unix() - dayjs(b.date).unix(),
+  );
+
+  return Array.from(
+    pipe(
+      sortedArticles,
       /** 記事の日付をフォーマット */
-      .map((article, index) => ({
+      map((article, index) => ({
         ...article,
         /**
          * もし、記事の日付が今日以前で、かつ、記事の URL が null でないなら published を true にする
@@ -38,16 +45,22 @@ export function getArticles(options: ReturnArticlesFilterOptions = {}) {
         runnerPath: article.githubUser
           ? `/ekiden/runners/${article.githubUser}/`
           : undefined,
-      }))
+      })),
+
       /** githubUser が runner と一致するものを抽出. もし runner が undefined なら全ての記事を抽出 */
-      .filter(
+      filter(
         ({ githubUser }) =>
           options.runner === undefined || githubUser === options.runner,
-      )
+      ),
+
       /** もし fileterByIsPublished が undefined なら全ての記事を抽出. もし、true なら published が true の記事を抽出 */
-      .filter(
+      filter(
         (article) => options.isPublished === undefined || article.published,
-      )
+      ),
+
+      /** url が null でない記事のみを抽出 */
+      filter((article) => article.url !== null),
+    ),
   );
 }
 
