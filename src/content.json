@@ -2028,7 +2028,7 @@
       "title": "0.10 時代の Neovim Lua",
       "date": "2024-10-11",
       "runner": "delphinus",
-      "url": null,
+      "url": "https://qiita.com/delphinus/items/2c993527df40c9ebaea7",
       "githubUser": "delphinus",
       "issueNumber": 629
     },
@@ -2049,6 +2049,14 @@
       "issueNumber": 633
     },
     {
+      "title": "Vimで自動保存メモ",
+      "date": "2024-10-18",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/d4f89682bebd9f",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 646
+    },
+    {
       "title": "なごやvimについて仮",
       "date": "2024-10-21",
       "runner": "mimikun",
@@ -2063,6 +2071,22 @@
       "url": null,
       "githubUser": "hokorobi",
       "issueNumber": 634
+    },
+    {
+      "title": "なんか書くよ",
+      "date": "2024-10-25",
+      "runner": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 645
+    },
+    {
+      "title": "Meguro.vim #26 を開催しました",
+      "date": "2024-12-02",
+      "runner": "thinca",
+      "url": "https://thinca.hatenablog.com/entry/2024/12/megurovim-26",
+      "githubUser": "thinca",
+      "issueNumber": 647
     }
   ]
 }
