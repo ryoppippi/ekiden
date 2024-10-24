@@ -2068,15 +2068,15 @@
       "title": "osyo-manga/vim-operator-stay-cursor に PR した",
       "date": "2024-10-23",
       "runner": "hokorobi",
-      "url": null,
+      "url": "https://zenn.dev/hokorobi/articles/27234d7ede254e",
       "githubUser": "hokorobi",
       "issueNumber": 634
     },
     {
-      "title": "なんか書くよ",
+      "title": "個人的にいいと思うVim_Neovimの始め方",
       "date": "2024-10-25",
       "runner": "staticWagomU",
-      "url": null,
+      "url": "https://zenn.dev/wagomu/articles/20241025vim_ekiden",
       "githubUser": "staticWagomU",
       "issueNumber": 645
     },
@@ -2095,6 +2095,22 @@
       "url": null,
       "githubUser": "mozumasu",
       "issueNumber": 672
+    },
+    {
+      "title": "Neovimはじめてみた",
+      "date": "2024-11-01",
+      "runner": "gsy0911",
+      "url": "https://zenn.dev/gsy0911/articles/1b4344e41b9d5b",
+      "githubUser": "gsy0911",
+      "issueNumber": 674
+    },
+    {
+      "title": "asyncompleteをftでtoggleする",
+      "date": "2024-11-04",
+      "runner": "ぺりー",
+      "url": null,
+      "githubUser": "satorunooshie",
+      "issueNumber": 673
     },
     {
       "title": "Meguro.vim #26 を開催しました",
